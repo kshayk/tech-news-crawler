@@ -1,0 +1,24 @@
+{
+  "name": "tech-news-crawler",
+  "version": "1.0.0",
+  "description": "A web crawler for tech news websites",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crawler",
+    "tech",
+    "news"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.2",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.4.7",
+    "node-fetch": "^2.6.7",
+    "winston": "^3.11.0"
+  }
+}
