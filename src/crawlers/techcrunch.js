@@ -21,7 +21,7 @@ class TechCrunchCrawler extends BaseCrawler {
                     title,
                     link,
                     description,
-                    imageUrl,
+                    image: imageUrl,
                     source: 'techcrunch',
                     company: this.extractCompany(title)
                 });

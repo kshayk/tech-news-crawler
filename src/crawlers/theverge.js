@@ -29,6 +29,7 @@ class TheVergeCrawler extends BaseCrawler {
               if (!this.shouldFilterTitle(title)) {
                 articles.push({
                   title,
+                  image: null,
                   link: this.normalizeLink(link),
                   description,
                   company: this.extractCompany(title)
