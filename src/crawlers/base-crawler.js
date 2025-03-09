@@ -11,8 +11,7 @@ class BaseCrawler {
     async fetchPage(url = this.baseUrl) {
         try {
             const response = await axios.get(url);
-            const $ = cheerio.load(response.data);
-            return $;
+            return cheerio.load(response.data);
         } catch (error) {
             logger.error(`Error fetching page from ${url}: ${error.message}`);
             return null;
